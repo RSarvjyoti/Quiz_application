@@ -30,14 +30,20 @@ const signup = async (req, res) => {
     const validRoles = ["admin", "owner", "user"];
     const userRole = validRoles.includes(role) ? role : "user";
 
+    //
+    let photoUrl
+    if (req.file) {
+      photoUrl = req.file.path;
+    }
+
     // create new user
     const newUser = new User({
       name,
       email,
       password: hashPassword,
       role: userRole,
+      ...(photoUrl && { photo: photoUrl }),
     });
-
     await newUser.save();
 
     res.status(201).json({
@@ -48,6 +54,7 @@ const signup = async (req, res) => {
         email: newUser.email,
         role: newUser.role,
         created_at: newUser.created_at,
+        photo: newUser.photo,
       },
     });
   } catch (err) {
@@ -60,7 +67,7 @@ const signin = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    const user = await User.findOne({  email  });
+    const user = await User.findOne({ email });
     if (!user) {
       res
         .status(400)
@@ -73,7 +80,7 @@ const signin = async (req, res) => {
     }
 
     const accessToken = jwt.sign(
-      { id: user.id, email: user.email,role: user.role },
+      { id: user.id, email: user.email, role: user.role },
       process.env.ACCESS_TOKEN_SECRET,
       {
         expiresIn: "1d",
@@ -98,6 +105,7 @@ const signin = async (req, res) => {
         email: user.email,
         address: user.address,
         role: user.role,
+        photo: user.photo
       },
     });
   } catch (err) {
@@ -107,26 +115,50 @@ const signin = async (req, res) => {
 };
 
 const logout = async (req, res) => {
-  try{
-    const authHeader = req.headers['authorization'];
+  try {
+    const authHeader = req.headers["authorization"];
 
-    if(!authHeader){
-      return res.status(403).json({message: "Authorization header missing"});
+    if (!authHeader) {
+      return res.status(403).json({ message: "Authorization header missing" });
     }
 
     const accessToken = authHeader.split(" ")[1];
 
-    if(!accessToken){
-      return res.status(400).json({message:"Tokens are required to logout"});
+    if (!accessToken) {
+      return res.status(400).json({ message: "Tokens are required to logout" });
     }
 
-    await Blocklist.create({token: accessToken, type: "access"});
+    await Blocklist.create({ token: accessToken, type: "access" });
 
-    res.status(200).json({message : "Logout successfully"});
-    
-  }catch(err) {
-    console.log('Logout error', err);
-    res.status(500).json({message:"Internal server error"});
+    res.status(200).json({ message: "Logout successfully" });
+  } catch (err) {
+    console.log("Logout error", err);
+    res.status(500).json({ message: "Internal server error" });
   }
-}
-module.exports = { signup, signin, logout};
+};
+
+const getUserDetails = async (req, res) => {
+  try {
+    // Support both 'Authorization' and 'x-access-token' headers
+    let token = req.headers.authorization?.split(" ")[1];
+    if (!token && req.headers["x-access-token"]) {
+      token = req.headers["x-access-token"];
+    }
+    if (!token) {
+      return res.status(401).json({ message: "No token provided" });
+    }
+
+    const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+    const user = await User.findById(decoded.id).select("-password");
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.status(200).json(user);
+  } catch (err) {
+    console.error(err);
+    res.status(401).json({ message: "Invalid or expired token" });
+  }
+};
+
+module.exports = { signup, signin, logout, getUserDetails };

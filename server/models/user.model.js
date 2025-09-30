@@ -2,15 +2,11 @@ const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
   {
-    id: {
-      type: mongoose.Schema.Types.ObjectId, 
-      auto: true,
-    },
     name: {
       type: String,
       required: [true, "Name is required"],
-      minlength: [2, "Name must be at least 2 characters"],
-      maxlength: [60, "Name must be at most 60 characters"],
+      minlength: [2, "Name must be 2-20 chars."],
+      maxlength: [20, "Name must be 2-20 chars."],
     },
     email: {
       type: String,
@@ -28,6 +24,11 @@ const userSchema = new mongoose.Schema(
       enum: ["admin", "user"],
       default: "user",
       required: true,
+    },
+    photo: {
+      type: String,
+      default:
+        "https://img.freepik.com/premium-photo/user-icon-person-symbol-human-avatar-3d-render_473931-217.jpg?w=740",
     },
     created_at: {
       type: Date,
