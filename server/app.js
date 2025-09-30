@@ -4,6 +4,7 @@ require("dotenv").config();
 const cors = require("cors");
 const authRoute = require("./routes/auth.route");
 const questionRoute = require("./routes/question.route");
+const progressRoute = require("./routes/progress.route");
 
 const app = express();
 const PORT = process.env.PORT || 9080
@@ -13,7 +14,8 @@ app.use(cors())
 app.use(express.json());
 
 app.use('/api/auth', authRoute);
-app.use('/api/question', questionRoute)
+app.use('/api/question', questionRoute);
+app.use('/api/progress', progressRoute);
 
 app.get('/', (req, res) => {
     res.send("Home route");
