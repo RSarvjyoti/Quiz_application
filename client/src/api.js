@@ -1,1 +1,1 @@
-export const BaseURL = "https://quiz-application-9suo.onrender.com/" // "http://localhost:8080/api"
+export const BaseURL = "https://quiz-application-9suo.onrender.com/api" // "http://localhost:8080/api"
