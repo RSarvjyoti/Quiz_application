@@ -9,6 +9,7 @@ import Navbar from './components/Navbar'
 import CreateQuestions from './components/CreateQuestions'
 import ProgressTrack from './pages/ProgressTrack'
 import Questions from './pages/Questions'
+import UsersPage from './pages/UsersPage'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/add-quetions' element={<CreateQuestions />} />
         <Route path='/questions' element={<Questions />} />
         <Route path='/progress-track' element={<ProgressTrack />} />
+        <Route path='/users' element={<UsersPage />} />
       </Routes>
     <Footer />
     </>

@@ -161,4 +161,37 @@ const getUserDetails = async (req, res) => {
   }
 };
 
-module.exports = { signup, signin, logout, getUserDetails };
+const getAllUsers = async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+
+    const filter = {};
+    if (req.query.role) {
+      filter.role = req.query.role;
+    }
+    if (req.query.name) {
+      filter.name = { $regex: req.query.name, $options: "i" };
+    }
+
+    const users = await User.find(filter)
+      .select("-password") 
+      .skip(skip)
+      .limit(limit);
+
+    const totalUsers = await User.countDocuments(filter);
+
+    res.status(200).json({
+      total: totalUsers,
+      page,
+      totalPages: Math.ceil(totalUsers / limit),
+      users,
+    });
+  } catch (err) {
+    console.error("Get all users error:", err);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
+
+module.exports = { signup, signin, logout, getUserDetails, getAllUsers };

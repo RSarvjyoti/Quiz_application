@@ -1,9 +1,10 @@
 const {Router} = require("express");
 
 const {body} = require("express-validator");
-const { signup, signin, logout, getUserDetails } = require("../controllers/auth.controller");
+const { signup, signin, logout, getUserDetails, getAllUsers } = require("../controllers/auth.controller");
 const isAuth = require("../middlewares/auth.middleware");
 const { upload } = require("../utils/cloudinary");
+const checkRole = require("../middlewares/role");
 
 
 const authRoute = Router();
@@ -22,5 +23,6 @@ authRoute.post('/signin', [
 
 authRoute.post('/logout', isAuth, logout);
 authRoute.get('/me',isAuth, getUserDetails);
+authRoute.get('/users', isAuth,checkRole("admin"), getAllUsers);
 
 module.exports = authRoute;
