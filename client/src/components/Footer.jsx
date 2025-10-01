@@ -17,8 +17,9 @@ const Footer = () => {
               <h4 className="font-semibold text-[#dd8725] mb-2 text-lg">Tech Stacks</h4>
               <ul className="list-disc list-inside text-[#ffffffcc] space-y-1">
                 <li>Frontend: React, Vite, Tailwind CSS</li>
-                <li>Backend: Node.js, Express, Cloudinary</li>
+                <li>Backend: Node.js, Express</li>
                 <li>Database: MongoDB</li>
+                <li>Cloud Storage: Mongo Atlas, Cloudinary</li>
               </ul>
             </div>
             <div>
@@ -44,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-sm text-[#ffffff99]">
-          © {new Date().getFullYear()} Quiz App. All rights reserved.
+          © {new Date().getFullYear()} Quiz App. Created By Sarvjyoti.
         </div>
       </div>
     </footer>

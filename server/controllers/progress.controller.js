@@ -7,7 +7,7 @@ const saveProgress = async (req, res) => {
       return res.status(400).json({ message: "All fields are required." });
     }
     const progress = new Progress({
-      userId: req.userId,
+      userId: req.user.id,
       category,
       correctAnswers,
       wrongAnswers,
@@ -22,7 +22,7 @@ const saveProgress = async (req, res) => {
 
 const getProgress = async (req, res) => {
   try {
-    const progress = await Progress.find({ userId: req.userId });
+    const progress = await Progress.find({ userId: req.user.id });
     res.json(progress);
   } catch (err) {
     console.error(err);

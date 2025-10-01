@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <nav
       style={{
-        background: "#182232", 
+        background: "#182232",
         color: "#ffffff",
         borderBottom: "2px solid #dd8725",
         boxShadow: "0 2px 8px rgba(77,81,86,0.08)",
@@ -72,29 +72,51 @@ const Navbar = () => {
             <FiBook className="w-7 h-7" />
             <span>Quiz App</span>
           </Link>
+
+          <Link
+            to="/"
+            className="flex items-center space-x-2 font-bold"
+            style={{ color: "#ffffff" }}
+          >
+            <span>Home</span>
+          </Link>
+
+          <Link
+            to="/progress-track"
+            className="flex items-center space-x-2 font-bold"
+            style={{ color: "#ffffff" }}
+          >
+            <span>Progress Track</span>
+          </Link>
+
           <div className="flex items-center space-x-4">
             {user && user.role === "admin" && (
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-4">
                 <Link
-                  to="/add-book"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all duration-200 shadow hover:bg-[#dd8725] hover:text-[#1f1f1f] focus:outline-none focus:ring-2 focus:ring-[#dd8725]"
+                  to="/add-quetions"
+                  className="inline-flex items-center gap-2 px-5 py-2 font-medium rounded-full transition-all duration-200 shadow hover:bg-[#dd8725] hover:text-[#1f1f1f] focus:outline-none focus:ring-2 focus:ring-[#dd8725]"
                   style={{
-                    background: "#4d5156",
                     color: "#ffffff",
+                    padding: "10px"
                   }}
                 >
                   <FiPlus className="w-5 h-5" />
-                  <span>Add Book</span>
+                  <span>Add Questions</span>
                 </Link>
                 <Link
                   to="/dashboard"
-                  className="inline-flex items-center px-4 py-2 rounded-full font-medium transition-all duration-200 shadow hover:bg-[#dd8725] hover:text-[#1f1f1f] focus:outline-none focus:ring-2 focus:ring-[#dd8725]"
-                  style={{ background: "#4d5156", color: "#ffffff" }}
+                  className="inline-flex items-center gap-2 px-5 py-2 font-medium rounded-full transition-all duration-200 shadow hover:bg-[#dd8725] hover:text-[#1f1f1f] focus:outline-none focus:ring-2 focus:ring-[#dd8725]"
+                  style={{
+                    color: "#ffffff",
+                    padding: "10px", 
+                    marginRight: "10px"
+                  }}
                 >
                   Dashboard
                 </Link>
               </div>
             )}
+
             {user ? (
               <div className="relative" ref={menuRef}>
                 <button
@@ -121,7 +143,10 @@ const Navbar = () => {
                       {user.name?.charAt(0).toUpperCase()}
                     </div>
                   )}
-                  <span className="font-medium hidden sm:inline" style={{ color: "#ffffff" }}>
+                  <span
+                    className="font-medium hidden sm:inline"
+                    style={{ color: "#ffffff" }}
+                  >
                     {user.name}
                   </span>
                   <FiChevronDown

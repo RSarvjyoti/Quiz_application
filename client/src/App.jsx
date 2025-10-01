@@ -6,6 +6,9 @@ import Signup from './pages/Signup'
 import Login from './pages/Login'
 import Dadhboard from './pages/Dadhboard'
 import Navbar from './components/Navbar'
+import CreateQuestions from './components/CreateQuestions'
+import ProgressTrack from './pages/ProgressTrack'
+import Questions from './pages/Questions'
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dadhboard />} />
+        <Route path='/add-quetions' element={<CreateQuestions />} />
+        <Route path='/questions' element={<Questions />} />
+        <Route path='/progress-track' element={<ProgressTrack />} />
       </Routes>
     <Footer />
     </>
