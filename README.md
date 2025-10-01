@@ -76,12 +76,32 @@
 ## Screenshots
 
 - Sign Up page
+  ---
+  <img width="1366" height="892" alt="Signup" src="https://github.com/user-attachments/assets/d6803cbd-4160-4862-9008-8e08433a8640" />
+
 - Sign In page
+  ---
+  <img width="1366" height="892" alt="Signin" src="https://github.com/user-attachments/assets/7b10c346-f183-4cc6-bf1d-05514fcdcca7" />
+
 - Home Page
+  ---
+  <img width="1366" height="892" alt="Home" src="https://github.com/user-attachments/assets/4c3e1037-ed1f-4d0b-a96c-001b0e3f91c1" />
+
 - Questions Page
+  ---
+  <img width="1366" height="973" alt="Questions" src="https://github.com/user-attachments/assets/9b1c67c2-3349-4dc1-84da-1cc8c4a82e14" />
+
 - Progress Track Page
+  ---
+  <img width="1366" height="892" alt="Progress Track" src="https://github.com/user-attachments/assets/07198ab2-9c03-4808-bdf9-cab14b8031d6" />
+
 - Admin Panel / Dashboard
+  ---
+  <img width="1366" height="892" alt="Dashboard" src="https://github.com/user-attachments/assets/e062f6ea-ed26-445f-ba97-96a9a6022a39" />
+
 - Users Page
+  ---
+  <img width="1366" height="892" alt="Users" src="https://github.com/user-attachments/assets/cc5283b7-fec3-4193-8815-5bb90c7729f2" />
 
 ---
 
