@@ -29,6 +29,7 @@ const Footer = () => {
                 <li>Quiz Creation & Participation</li>
                 <li>Score Tracking</li>
                 <li>Responsive Design</li>
+                <li>Admin Panel</li>
               </ul>
             </div>
           </div>
