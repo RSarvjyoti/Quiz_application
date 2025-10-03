@@ -35,6 +35,16 @@
 - Admin Panel for Managing Users & Questions  
 
 ---
+### Folder Structure 
+- Client
+  ---
+  <img width="260" height="508" alt="Screenshot (1183)" src="https://github.com/user-attachments/assets/155455b7-43f7-49dd-995f-e9728f388748" />
+- Server
+  ---
+  <img width="248" height="455" alt="Screenshot (1184)" src="https://github.com/user-attachments/assets/a4a1d6c4-55bb-4dc1-b7cd-b415c8c707e0" />
+  <img width="243" height="317" alt="Screenshot (1185)" src="https://github.com/user-attachments/assets/0496f7e5-8738-4404-99fd-169a79b15fa7" />
+
+---
 
 ## API Endpoints
 
@@ -110,6 +120,23 @@
 - **Admin Panel:** Admin can manage users and add questions.  
 - **Responsive Design:** Works on both mobile and desktop screens.  
 - **Cloud Storage:** User profile photos are stored in Cloudinary.  
+
+## How will you access project on your local system
+```
+git clone https://github.com/RSarvjyoti/Quiz_application.git
+// access client code
+cd client
+npm npm i
+npm run dev
+
+// access backend code
+cd server
+npm i
+npm start
+
+// access env go to .env.example file
+
+```
 
 ## Connect with me : 
 <a href="https://www.linkedin.com/in/sarvjyoti05/">LinkedIn</a>
