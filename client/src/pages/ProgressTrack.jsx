@@ -66,12 +66,12 @@ const ProgressTrack = () => {
   return (
     <div
       className="min-h-screen flex flex-col items-center px-4 py-8"
-      style={{ background: "linear-gradient(135deg, #182232 0%, #4d5156 100%)" }}
+      style={{ background: "linear-gradient(135deg, #182232 0%, #4d5156 100%)", paddingTop: "40px" }}
     >
       <div className="max-w-3xl w-full mx-auto text-center mb-10">
         <FiTrendingUp className="mx-auto text-[#dd8725] w-12 h-12 mb-2" />
         <h1 className="text-3xl font-bold text-[#dd8725] mb-2">Your Progress</h1>
-        <p className="text-[#ffffffcc] text-lg">
+        <p className="text-[#ffffffcc] text-lg" style={{marginBottom: "30px"}}>
           Track your quiz performance by category.
         </p>
       </div>
@@ -87,7 +87,7 @@ const ProgressTrack = () => {
         ) : progress.length === 0 ? (
           <div className="text-center text-[#dd8725] py-8">No progress data found.</div>
         ) : (
-          <div className="grid grid-cols-7 text-center border-b border-[#4d5156] font-semibold text-[#dd8725]">
+          <div  className="grid grid-cols-7 text-center border-b border-[#4d5156] font-semibold text-[#dd8725]">
             {/* Header */}
             <div className="py-3 px-2">Category</div>
             <div className="py-3 px-2">Correct</div>

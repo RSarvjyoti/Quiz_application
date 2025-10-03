@@ -60,7 +60,7 @@ const Login = () => {
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-md bg-[#1f1f1f] rounded-2xl shadow-2xl p-8 flex flex-col gap-6"
-        style={{ color: "#ffffff" }}
+        style={{ color: "#ffffff", padding:"50px" }}
       >
         <h2 className="text-3xl font-bold text-center" style={{ color: "#dd8725" }}>
           Login

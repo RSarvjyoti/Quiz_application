@@ -61,6 +61,7 @@ const Home = () => {
       className="min-h-screen gap-7 flex flex-col items-center justify-start px-4 py-8"
       style={{
         background: "linear-gradient(135deg, #182232 0%, #4d5156 100%)",
+        paddingTop: "40px"
       }}
     >
       {/* Header */}
