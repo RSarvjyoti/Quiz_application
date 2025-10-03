@@ -102,10 +102,9 @@
 
 - Questions Page
   ---
-  
-<img width="1366" height="892" alt="Question1" src="https://github.com/user-attachments/assets/341e4e85-2a25-43f5-adc2-201c40e82e04" />
+  <img width="1366" height="1033" alt="screencapture-quiz-application-seven-beta-vercel-app-questions-2025-10-03-19_06_31" src="https://github.com/user-attachments/assets/bc3230a5-97c6-4dac-927a-4ce990415fe1" />
 
-<img width="1366" height="1093" alt="Quetions2" src="https://github.com/user-attachments/assets/2ea155aa-92ec-4568-83eb-164dff79558f" />
+<img width="1366" height="1153" alt="screencapture-quiz-application-seven-beta-vercel-app-questions-2025-10-03-19_09_19" src="https://github.com/user-attachments/assets/44ba3b0b-1d05-40ad-a44c-04a32abb5d25" />
 
 - Progress Track Page
   ---
