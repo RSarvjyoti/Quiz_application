@@ -77,12 +77,13 @@ const Questions = () => {
       className="min-h-screen flex flex-col items-center justify-start px-4 py-8"
       style={{
         background: "linear-gradient(135deg, #182232 0%, #4d5156 100%)",
+        paddingTop: "40px"
       }}
     >
       <div className="max-w-2xl w-full mx-auto mb-8 text-center">
         <FiHelpCircle className="mx-auto text-[#dd8725] w-12 h-12 mb-2" />
         <h2 className="text-3xl font-bold text-[#dd8725] mb-2">{category} MCQ Quiz</h2>
-        <p className="text-[#ffffffcc] text-lg">Select the correct answer for each question below.</p>
+        <p style={{marginBottom:"20px"}} className="text-[#ffffffcc] text-lg">Select the correct answer for each question below.</p>
       </div>
       <form className="flex flex-col gap-8 w-full max-w-2xl" onSubmit={handleSubmit}>
         {questions.map((q, idx) => (
