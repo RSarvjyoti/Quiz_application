@@ -35,6 +35,16 @@
 - Admin Panel for Managing Users & Questions  
 
 ---
+### Folder Structure 
+- Client
+  ---
+  <img width="260" height="508" alt="Screenshot (1183)" src="https://github.com/user-attachments/assets/155455b7-43f7-49dd-995f-e9728f388748" />
+- Server
+  ---
+  <img width="248" height="455" alt="Screenshot (1184)" src="https://github.com/user-attachments/assets/a4a1d6c4-55bb-4dc1-b7cd-b415c8c707e0" />
+  <img width="243" height="317" alt="Screenshot (1185)" src="https://github.com/user-attachments/assets/0496f7e5-8738-4404-99fd-169a79b15fa7" />
+
+---
 
 ## API Endpoints
 
@@ -76,12 +86,32 @@
 ## Screenshots
 
 - Sign Up page
+  ---
+  <img width="1366" height="892" alt="Signup" src="https://github.com/user-attachments/assets/d6803cbd-4160-4862-9008-8e08433a8640" />
+
 - Sign In page
+  ---
+  <img width="1366" height="892" alt="Signin" src="https://github.com/user-attachments/assets/7b10c346-f183-4cc6-bf1d-05514fcdcca7" />
+
 - Home Page
+  ---
+  <img width="1366" height="892" alt="Home" src="https://github.com/user-attachments/assets/4c3e1037-ed1f-4d0b-a96c-001b0e3f91c1" />
+
 - Questions Page
+  ---
+  <img width="1366" height="973" alt="Questions" src="https://github.com/user-attachments/assets/9b1c67c2-3349-4dc1-84da-1cc8c4a82e14" />
+
 - Progress Track Page
+  ---
+  <img width="1366" height="892" alt="Progress Track" src="https://github.com/user-attachments/assets/07198ab2-9c03-4808-bdf9-cab14b8031d6" />
+
 - Admin Panel / Dashboard
+  ---
+  <img width="1366" height="892" alt="Dashboard" src="https://github.com/user-attachments/assets/e062f6ea-ed26-445f-ba97-96a9a6022a39" />
+
 - Users Page
+  ---
+  <img width="1366" height="892" alt="Users" src="https://github.com/user-attachments/assets/cc5283b7-fec3-4193-8815-5bb90c7729f2" />
 
 ---
 
@@ -90,6 +120,23 @@
 - **Admin Panel:** Admin can manage users and add questions.  
 - **Responsive Design:** Works on both mobile and desktop screens.  
 - **Cloud Storage:** User profile photos are stored in Cloudinary.  
+
+## How will you access project on your local system
+```
+git clone https://github.com/RSarvjyoti/Quiz_application.git
+// access client code
+cd client
+npm npm i
+npm run dev
+
+// access backend code
+cd server
+npm i
+npm start
+
+// access env go to .env.example file
+
+```
 
 ## Connect with me : 
 <a href="https://www.linkedin.com/in/sarvjyoti05/">LinkedIn</a>
