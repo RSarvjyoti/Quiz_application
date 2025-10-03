@@ -87,31 +87,42 @@
 
 - Sign Up page
   ---
-  <img width="1366" height="892" alt="Signup" src="https://github.com/user-attachments/assets/d6803cbd-4160-4862-9008-8e08433a8640" />
+  <img width="1366" height="892" alt="Signup" src="https://github.com/user-attachments/assets/52c61f02-74de-4520-bdc2-2933c7b2169a" />
+
 
 - Sign In page
   ---
-  <img width="1366" height="892" alt="Signin" src="https://github.com/user-attachments/assets/7b10c346-f183-4cc6-bf1d-05514fcdcca7" />
+  <img width="1366" height="892" alt="Signin" src="https://github.com/user-attachments/assets/288f1c45-5d76-423e-b817-712e8f066b55" />
+
 
 - Home Page
   ---
-  <img width="1366" height="892" alt="Home" src="https://github.com/user-attachments/assets/4c3e1037-ed1f-4d0b-a96c-001b0e3f91c1" />
+  <img width="1366" height="892" alt="home" src="https://github.com/user-attachments/assets/6a6c5a07-19b3-4c15-bf56-1c2680dada42" />
+
 
 - Questions Page
   ---
-  <img width="1366" height="973" alt="Questions" src="https://github.com/user-attachments/assets/9b1c67c2-3349-4dc1-84da-1cc8c4a82e14" />
+  
+<img width="1366" height="892" alt="Question1" src="https://github.com/user-attachments/assets/341e4e85-2a25-43f5-adc2-201c40e82e04" />
+
+<img width="1366" height="1093" alt="Quetions2" src="https://github.com/user-attachments/assets/2ea155aa-92ec-4568-83eb-164dff79558f" />
 
 - Progress Track Page
   ---
-  <img width="1366" height="892" alt="Progress Track" src="https://github.com/user-attachments/assets/07198ab2-9c03-4808-bdf9-cab14b8031d6" />
+ <img width="1366" height="892" alt="progress Track" src="https://github.com/user-attachments/assets/27d7afd2-2c55-44b0-8982-bd0beb312aef" />
+
 
 - Admin Panel / Dashboard
   ---
-  <img width="1366" height="892" alt="Dashboard" src="https://github.com/user-attachments/assets/e062f6ea-ed26-445f-ba97-96a9a6022a39" />
+  <img width="1366" height="892" alt="Dashboard" src="https://github.com/user-attachments/assets/f17b915f-761b-497d-9aeb-ebe07a498348" />
+  - Add Questions
+    ---
+    
 
 - Users Page
   ---
-  <img width="1366" height="892" alt="Users" src="https://github.com/user-attachments/assets/cc5283b7-fec3-4193-8815-5bb90c7729f2" />
+  <img width="1366" height="892" alt="screencapture-quiz-application-seven-beta-vercel-app-users-2025-10-03-17_57_58" src="https://github.com/user-attachments/assets/f5f84127-a4cf-4cb6-bcc8-feef82bc878e" />
+
 
 ---
 
