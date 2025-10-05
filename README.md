@@ -147,6 +147,7 @@ npm i
 npm start
 
 // access env go to .env.example file
+// access admin dashboard with this: email => sarvjyoti@gmail.com, password : 12345678
 
 ```
 
