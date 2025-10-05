@@ -83,7 +83,7 @@ const CreateQuestions = () => {
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-[#1f1f1f] rounded-xl shadow-2xl p-8 flex flex-col gap-6"
-        style={{ color: "#ffffff" }}
+        style={{ color: "#ffffff", padding:"20px" }}
       >
         <h2 className="text-2xl font-bold text-center mb-4 flex items-center justify-center gap-2" style={{ color: "#dd8725" }}>
           <FiPlusCircle className="inline-block mb-1" />
