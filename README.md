@@ -116,7 +116,7 @@
   <img width="1366" height="892" alt="Dashboard" src="https://github.com/user-attachments/assets/f17b915f-761b-497d-9aeb-ebe07a498348" />
   - Add Questions
     ---
-    <img width="1366" height="892" alt="screencapture-quiz-application-seven-beta-vercel-app-add-quetions-2025-10-03-18_56_32" src="https://github.com/user-attachments/assets/1c4ac590-e1fc-4ce7-8049-cc4b43072bc3" />
+    <img width="1366" height="892" alt="screencapture-quiz-application-seven-beta-vercel-app-add-quetions-2025-10-05-13_18_27" src="https://github.com/user-attachments/assets/9abbf176-2c63-45f2-b34b-3f7930adec5f" />
 
     
 
