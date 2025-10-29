@@ -17,8 +17,9 @@
 - Express.js  
 - MongoDB  
 
-### Cloud Storage
-- MongoDB Atlas  
+### Cloud-hosted database
+- MongoDB Atlas
+### Cloud Storage for Media
 - Cloudinary  
 
 ### Deployment
